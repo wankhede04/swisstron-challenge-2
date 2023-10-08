@@ -1,13 +1,5 @@
-# Sample Hardhat Project
+# Swisstron challenge 2
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
-```
+## Contract addresses
+- Swisstron: 0xC60cb7B30Be8c2104D948222625DF911DB9037CB
+- Polygon mumbai: 0xfCE2A1A36bE8FFd70984EADCf04a35827EA6294E
