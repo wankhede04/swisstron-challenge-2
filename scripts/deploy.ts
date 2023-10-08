@@ -1,11 +1,11 @@
-import { ethers } from "hardhat";
+import hre from "hardhat";
 
 async function main() {
-  console.log("Swisstron deploying ...");
-  const contract = await ethers.getContractFactory("Swisstronik");
-  const instance = await contract.deploy(`${process.env.INIT_VALUE}`);
-  await instance.deployed();
-  console.log("Swisstron deployed: ", instance.address);
+  console.log("Swisstronik deploying ...");
+  const contract = await hre.ethers.deployContract("Swisstronik", [`${process.env.INIT_VALUE}`]);
+  await contract.deployed();
+
+  console.log("Swisstronik deployed: ", contract.address);
 }
 
 main().catch((error) => {
