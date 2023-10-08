@@ -5,6 +5,7 @@
     "hardhat": "^2.18.0"
   },
   "dependencies": {
+    "@swisstronik/swisstronik.js": "^1.0.0",
     "dotenv": "^16.3.1"
   },
   "scripts": {
@@ -12,6 +13,8 @@
     "clean": "hardhat clean",
     "test": "hardhat test",
     "deploy": "hardhat run --network $NETWORK scripts/deploy.ts",
-    "readValue": "hardhat run --network $NETWORK scripts/readValue.ts"
+    "readValue": "hardhat run --network $NETWORK scripts/readValue.ts",
+    "swisstron:setValue": "hardhat run scripts/swisstronik/setValue.ts --network swisstronik",
+    "swisstron:getValue": "hardhat run scripts/swisstronik/getValue.ts --network swisstronik"
   }
 }
