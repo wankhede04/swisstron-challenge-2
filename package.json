@@ -11,6 +11,7 @@
     "compile": "hardhat compile",
     "clean": "hardhat clean",
     "test": "hardhat test",
-    "deploy": "hardhat run --network $NETWORK scripts/deploy.ts"
+    "deploy": "hardhat run --network $NETWORK scripts/deploy.ts",
+    "readValue": "hardhat run --network $NETWORK scripts/readValue.ts"
   }
 }
