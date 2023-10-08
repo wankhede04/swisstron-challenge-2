@@ -11,6 +11,10 @@ const config: HardhatUserConfig = {
       url: process.env.SWISSTRON_RPC_URL,
       accounts: [`0x${process.env.PRIVATE_KEY}`],
     },
+    mumbai: {
+      url: `https://polygon-mumbai.g.alchemy.com/v2/${process.env.POLYGON_TESTNET_ALCHEMY_API_KEY}`,
+      accounts: [`0x${process.env.PRIVATE_KEY}`],
+    }
   },
 };
 
